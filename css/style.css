@@ -20,7 +20,7 @@ header, footer {
 .container {
     padding: 20px;
     max-width: 1200px;
-    min-height: 70vh;
+    min-height: 75vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -95,4 +95,9 @@ nav a {
         display: block;
         border: 1px solid #ccc;
     }
+
+    .container {
+        min-height: 70vh;
+    }
+
 }
