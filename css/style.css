@@ -20,7 +20,7 @@ header, footer {
 .container {
     padding: 20px;
     max-width: 1200px;
-    min-height: 80vh;
+    min-height: 70vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -54,6 +54,24 @@ header, footer {
     color: rgb(16, 77, 117);
 }
 
+nav a {
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #979393;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    padding: 4px;
+    transition: .3s;
+    &:hover {
+        background-color: rgb(3, 191, 248);
+        color: black;
+    }
+}
+
 .card-training a {
     margin: 10px;
     text-align: center;
@@ -69,5 +87,12 @@ header, footer {
     &:hover {
         background-color: rgb(3, 191, 248);
         color: black;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav a {
+        display: block;
+        border: 1px solid #ccc;
     }
 }
