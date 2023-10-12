@@ -46,11 +46,13 @@ main {
 }
 
 .table-container {
+    max-width: 100%;
     overflow-x: auto;
 }
 
 table {
     border-collapse: collapse;
+    box-shadow: 0 2px 5px black;
 }
 
 table,
@@ -82,25 +84,10 @@ nav a {
         color: black;
     }
 }
-
-.card-training a {
-    margin: 10px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #979393;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 4px;
-    transition: .3s;
-
-    &:hover {
-        background-color: rgb(3, 191, 248);
-        color: black;
-    }
+aside {
+    display: none;
 }
+
 
 @media only screen and (max-width: 600px) {
     nav a {
@@ -110,6 +97,14 @@ nav a {
 
     .container {
         min-height: 70vh;
+    }
+
+    header {
+        font-size: 1vh;
+    }
+
+    html {
+        font-size: 1.5vh;
     }
 
 }
