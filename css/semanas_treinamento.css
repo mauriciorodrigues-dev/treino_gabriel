@@ -20,34 +20,17 @@ footer {
     color: rgb(184, 3, 184);
 }
 
-main {
-    background-color: #ccc;
-}
 
 
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    min-height: 75vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
 
 main {
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
     display: grid;
     place-items: center;
-}
-
-.table-container {
-    max-width: 100%;
-    overflow-x: auto;
+    min-height: 75vh;
+    background-color: #fdfbfb;
 }
 
 table {
@@ -85,7 +68,32 @@ nav a {
     }
 }
 aside {
-    display: none;
+    display: block;
+}
+
+button {
+    padding: 15px;
+    width: 150px;
+    border: none;
+    background-color: rgb(0, 174, 255);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+
+}
+
+
+dialog::backdrop {
+    background-color: rgba(253, 253, 253, 0.637);
+}
+
+dialog {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width:100%;
 }
 
 
@@ -95,9 +103,6 @@ aside {
         border: 1px solid #ccc;
     }
 
-    .container {
-        min-height: 70vh;
-    }
 
     header {
         font-size: 1vh;
