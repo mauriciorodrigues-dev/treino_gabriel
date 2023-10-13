@@ -87,6 +87,7 @@ button {
     background-color: white;
     z-index: 2;
     position: relative;
+    margin: 30px;
 
 }
 
@@ -139,12 +140,43 @@ button {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     nav a {
         display: block;
         border: 1px solid #ccc;
     }
 
+    aside {
+        margin-bottom: 30px;
+    }
+
+    header {
+        font-size: 1vh;
+    }
+
+    html {
+        font-size: 1.5vh;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .dias-da-semana {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    nav a {
+        display: block;
+        border: 1px solid #ccc;
+    }
+
+    aside {
+        margin-bottom: 30px;
+    }
 
     header {
         font-size: 1vh;
