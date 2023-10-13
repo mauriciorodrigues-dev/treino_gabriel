@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segunda-Feira - Peitoral</title>
+    <style>
+      @charset "UTF-8";
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        max-width: 100vw;
+        background-color: black;
+        min-height: 10vh;
+        color: rgb(209, 23, 209);
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        flex-wrap: wrap;
+      }
+      .card-treino {
+        border: 2px solid red;
+        /* background-color: #ccc; */
+        max-width: 400px;
+        height: 300px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 3px 5px #ccc;
+        margin: 25px;
+        /* padding: 10px; */
+      }
+      #secundario-card {
+        border: 2px solid #aae9f1;
+        /* background-color: #ccc; */
+        max-width: 400px;
+        height: 300px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 3px 5px #ccc;
+        margin: 25px;
+        /* padding: 10px; */
+      }
+
+      #terciario-card {
+        border: 2px solid #ffeaac;
+        /* background-color: #ccc; */
+        max-width: 400px;
+        height: 300px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 3px 5px #ccc;
+        margin: 25px;
+        /* padding: 10px; */
+      }
+
+      .card-title {
+        background-color: rgb(255, 235, 238);
+        display: block;
+        color: rgb(153, 17, 17);
+      }
+
+      #secundario {
+        background-color: #e0f7fa;
+        display: block;
+        color: rgb(75, 123, 212);
+      }
+
+      #terciario {
+        background-color: #fff8e1;
+        display: block;
+        color: #ffa000;
+      }
+
+      .objetivo {
+        padding: 10px;
+        border-bottom: 1px solid red;
+        border-top: 1px solid red;
+      }
+      #secundario-objetivo {
+        padding: 10px;
+        border-bottom: 1px solid #aae9f1;
+        border-top: 1px solid #aae9f1;
+      }
+
+      #terciario-objetivo {
+        padding: 10px;
+        border-bottom: 1px solid #ffeaac;
+        border-top: 1px solid #ffeaac;
+      }
+
+      #execucao {
+        font-weight: bold;
+        /* padding: 5px 0; */
+        text-transform: uppercase;
+        margin: 5px;
+      }
+
+      .exercicios {
+        padding: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        header{
+            text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Segunda-Feira (Treino Principal: Peito)</h1>
+    </header>
+    <main>
+      <div class="card-treino">
+        <div class="card-title">
+          <h2>Peitoral</h2>
+        </div>
+        <div class="objetivo">
+          <p id="execucao">Como executar o exercício</p>
+          <p>
+            Serão 5 séries de 10 a 15 movimentos, aumentando a carga sempre que
+            possível.
+          </p>
+        </div>
+        <div class="exercicios">
+          <p id="execucao">Exercícios</p>
+          <p>01 - Supino Inclinado com Halteres</p>
+          <p>02 - Supino Reto com Halteres</p>
+          <p>03 - Supino Declinado com Barra</p>
+          <p>04 - Pack-Deck</p>
+        </div>
+      </div>
+      <div class="card-treino" id="secundario-card">
+        <div class="card-title" id="secundario">
+          <h2>Tríceps</h2>
+        </div>
+        <div class="objetivo" id="secundario-objetivo">
+          <p id="execucao">Como executar o exercício</p>
+          <p>
+            Serão 3 séries de 10 a 15 movimentos, aumentando a carga sempre que
+            possível.
+          </p>
+        </div>
+        <div class="exercicios">
+          <p id="execucao">Exercícios</p>
+          <p>01 - Francês com Halter</p>
+          <p>02 - Testa</p>
+          <p>03 - Corda</p>
+        </div>
+      </div>
+      <div class="card-treino" id="terciario-card">
+        <div class="card-title" id="terciario">
+          <h2>Abdome</h2>
+        </div>
+        <div class="objetivo" id="terciario-objetivo">
+          <p id="execucao">Como executar o exercício</p>
+          <p>
+            Serão 3 séries de 20 movimentos, aumentando a carga sempre que
+            possível.
+          </p>
+        </div>
+        <div class="exercicios">
+          <p id="execucao">Exercícios</p>
+          <p>01 - Crunch Corda (Polia)</p>
+          <p>02 - Paralela - Inferior</p>
+          <p>
+            <b
+              >No exercício da paralela, assim que estiver confortável, pode se
+              usar caneleira</b
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
