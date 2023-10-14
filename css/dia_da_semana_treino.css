@@ -16,6 +16,10 @@ header {
   place-items: center;
 }
 
+main {
+  position: relative;
+}
+
 .card-container {
   display: flex;
   align-items: center;
@@ -23,6 +27,7 @@ header {
   min-height: 80vh;
   flex-wrap: wrap;
 }
+
 .card-treino {
   border: 2px solid red;
   /* background-color: #ccc; */
@@ -34,6 +39,7 @@ header {
   margin: 25px;
   /* padding: 10px; */
 }
+
 #card-dois {
   border: 2px solid #aae9f1;
   /* background-color: #ccc; */
@@ -105,34 +111,65 @@ header {
 }
 
 aside {
-  max-width: 100%;
+  width: 100%;
   background-color: #555;
   padding: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 aside button {
-  width: 120px;
+  width: 220px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #aae9f1;
   cursor: pointer;
   margin: 5px;
+  font-weight: bold;
+  
 }
+
+.back {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back a {
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+ 
+}
+
 
 @media only screen and (max-width: 600px) {
   header {
     text-align: center;
   }
+
+
 }
 
 @media only screen and (max-width: 400px) {
   
 
-  aside{
-    display: grid;
-    place-items: center;
+  aside button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
