@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -18,15 +19,11 @@ header, footer {
     color: rgb(184, 3, 184);
 }
 
-main {
-    background-color: #ccc;
-}
-
 
 .container {
     padding: 20px;
     max-width: 1200px;
-    min-height: 75vh;
+    min-height: 70vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,7 +34,7 @@ main {
 
 .card-training {
     width: 300px;
-    height: 200px;
+    height: 250px;
     border: 1px solid #020202;
     border-radius: 5px;
 
@@ -60,18 +57,21 @@ main {
     color: rgb(16, 77, 117);
 }
 
+nav {
+    height: 10vh;
+}
+
 nav a {
-    height: 100%;
     margin: 10px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #585757;
+    color: #ccc;
     border-radius: 5px;
     /* border: 1px solid #ccc; */
-    padding: 4px;
+    padding: 5px;
     transition: .3s;
     &:hover {
         background-color: rgb(3, 191, 248);
@@ -86,10 +86,10 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #979393;
+    color: #000000;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 4px;
+    border: 1px solid #000000;
+    padding: 10px;
     transition: .3s;
     &:hover {
         background-color: rgb(3, 191, 248);
