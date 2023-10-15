@@ -31,3 +31,19 @@ const peitoralButton = document.getElementById("card-1");
         tricepsCard.style.display = "block";
         abdomenCard.style.display = "block";
       });
+
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          modal.style.display = "block";
+        } else {
+          modal.style.display = "none";
+        }
+      }
+
+      function clickMenu() {
+        if (modal.style.display == "block") {
+          modal.style.display = "none";
+        } else {
+          modal.style.display = "block";
+        }
+      }

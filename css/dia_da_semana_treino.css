@@ -23,7 +23,7 @@ header {
   justify-content: center;
   align-items: center;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
   padding: 10px;
 }
 
@@ -32,7 +32,7 @@ header {
   text-align: center;
   border-radius: 5px;
   box-shadow: 1px 3px 5px #ccc;
-  min-height: 250px;
+  min-height: 310px;
 
 
 }
@@ -104,6 +104,9 @@ aside {
   width: 100%;
   background-color: #555;
   padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -129,30 +132,14 @@ aside button {
 
 }
 
-.back {
-  width: 60px;
-  height: 60px;
-  background-color: #ccc;
-  padding: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#burguer {
+  display: none;
+  text-align: center;
+  color: #fff;
 }
 
-.back a {
-  text-decoration: none;
-}
-
-
-.borda {
-  border: 1px solid #020202;
-}
-
-
-@media only screen and (max-width: 1000px) {
- 
-
+ i {
+  display: none;
 }
 
 
@@ -162,7 +149,7 @@ aside button {
   }
 
   aside {
-    height: 10px;
+    min-height: 40px;
 
   }
 
@@ -170,9 +157,13 @@ aside button {
     display: none;
   }
 
-  
-
+  .buttons button {
+    width: 29%;
+    font-size: .5rem;
+  }
 
 }
 
-@media only screen and (max-width: 400px) {}
+#burguer {
+  display: block;
+}
