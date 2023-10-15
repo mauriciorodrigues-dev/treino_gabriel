@@ -16,52 +16,40 @@ header {
   place-items: center;
 }
 
-main {
-  position: relative;
-}
 
 .card-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   min-height: 80vh;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(500, 1fr));
+  padding: 10px;
 }
 
 .card-treino {
-  border: 2px solid red;
-  /* background-color: #ccc; */
-  max-width: 400px;
-  height: 300px;
+
   text-align: center;
   border-radius: 5px;
   box-shadow: 1px 3px 5px #ccc;
-  margin: 25px;
-  /* padding: 10px; */
+
+
+}
+
+#card-um {
+  border: 2px solid red;
+
+  box-shadow: 1px 3px 5px #ccc;
 }
 
 #card-dois {
   border: 2px solid #aae9f1;
-  /* background-color: #ccc; */
-  max-width: 400px;
-  height: 300px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 1px 3px 5px #ccc;
-  margin: 25px;
-  /* padding: 10px; */
+
 }
 
 #card-tres {
   border: 2px solid #ffeaac;
-  /* background-color: #ccc; */
-  max-width: 400px;
-  height: 300px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 1px 3px 5px #ccc;
-  margin: 25px;
-  /* padding: 10px; */
+
 }
 
 .card-title {
@@ -87,6 +75,7 @@ main {
   border-bottom: 1px solid red;
   border-top: 1px solid red;
 }
+
 #secundario-objetivo {
   padding: 10px;
   border-bottom: 1px solid #aae9f1;
@@ -117,7 +106,8 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  align-content: center;
+  
 }
 
 aside button {
@@ -129,7 +119,8 @@ aside button {
   cursor: pointer;
   margin: 5px;
   font-weight: bold;
-  
+  /* display: block; */
+
 }
 
 .back {
@@ -138,8 +129,6 @@ aside button {
   background-color: #ccc;
   padding: 20px;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,8 +139,14 @@ aside button {
 }
 
 
+.borda {
+  border: 1px solid #020202;
+}
+
+
 @media only screen and (max-width: 1000px) {
  
+
 }
 
 
@@ -160,16 +155,18 @@ aside button {
     text-align: center;
   }
 
+  aside {
+    height: 10px;
 
-}
+  }
 
-@media only screen and (max-width: 400px) {
+  .buttons {
+    display: block;
+  }
+
   
 
-  aside button{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+
 }
+
+@media only screen and (max-width: 400px) {}
